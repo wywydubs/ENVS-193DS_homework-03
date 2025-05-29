@@ -1,0 +1,48 @@
+---
+title: "codehw3"
+format: html
+---
+
+GitHub repo: https://github.com/wywydubs/ENVS-193DS_homework-03
+
+```{r set up}
+message = FALSE # hide messages
+warning = FALSE # hide warning
+
+
+library(tidyverse) # Load packages
+library(here)
+library(gt) # chose gt
+
+library(janitor) # Optional packages
+library(readxl)
+```
+
+
+
+# Problem 1 
+
+## A. Data Summarizing
+
+I could compare the average time it took to get out of bed comparing alarm used
+versus not used. I would want to know if getting out of bed after a natural 
+wake up could be different on average than from an alarm, as there are different
+factors like morning obligations hence an alarm versus less grogginess from 
+waking up naturally. This comparison could be done by finding the mean of days
+with alarm use and the mean of no alarm use, and it could inform me more about
+the impact of alarms on my morning routine. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
