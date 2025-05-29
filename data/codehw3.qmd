@@ -69,6 +69,26 @@ how long it took to get out of bed, and the mean for each group is represented
 by a black diamond with error bars represented by black bars. 
 
 
+## d. Table Presentation
+
+```{r tablegt}
+summary_table <- sleep_log |> # assign to sleep log
+  group_by(`Alarm used?`) |>  # set categories
+  summarise(
+    `Average time to get out of bed (min)` = 
+      round(mean(`Time it took to get out of bed (min)`, na.rm = TRUE), 1), 
+    # round data to one decimal point
+    sample = n() # add in sample size
+  )
+# Display with gt
+summary_table |> 
+  gt() |>  #use gt
+  tab_header(
+    title = "Average Time to Get Out of Bed", # set title
+    subtitle = "Grouped by Alarm Use" #set subtitle
+  )
+```
+
 
 
 
