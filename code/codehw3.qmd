@@ -16,5 +16,89 @@ library(gt) # chose gt
 
 library(janitor) # Optional packages
 library(readxl)
+library(readr)
 ```
+
+
+
+# Problem 1 
+
+## a. Data Summarizing
+
+I could compare the average time it took to get out of bed comparing alarm used
+versus not used. I would want to know if getting out of bed after a natural 
+wake up could be different on average than from an alarm, as there are different
+factors like morning obligations hence an alarm versus less grogginess from 
+waking up naturally. This comparison could be done by finding the mean of days
+with alarm use and the mean of no alarm use, and it could inform me more about
+the impact of alarms on my morning routine. 
+
+## b. Visualization
+
+```{r visualization}
+message = FALSE # hide messages
+warning = FALSE # hide warning
+
+sleep_log <- read_csv("../data/sleep_log.csv") #read in data
+
+
+ggplot(sleep_log, aes(x = `Alarm used?`, # set x and y
+                      y = `Time it took to get out of bed (min)`)) +
+  geom_jitter(width = 0.2, height = 0, aes(color = `Alarm used?`)) +
+  stat_summary(fun = mean, geom = "point", 
+               shape = 18, size = 4, color = "black") + # add in mean
+  stat_summary(fun.data = mean_se, geom = "errorbar", 
+               width = 0.2, color = "black") + #add in error bars
+  labs(
+    title = "Minutes to Get Out of Bed with vs without Alarm", 
+    x = "Alarm Used?",
+    y = "Minutes to Get Out of Bed"
+    # change title + x and y titles
+  ) +
+  scale_color_manual(values = c("Yes" = "deeppink", "No" = "purple")) +
+  theme_minimal()
+# change theme to minimal and add color to values
+
+```
+
+## c. Caption
+
+Figure 1, above, titled "Minutes to Get Out of Bed", with two jitterplots,
+purple circular points representing days where alarms were not used and pink 
+circular points representing days when an alarm was used. The y axis represents
+how long it took to get out of bed, and the mean for each group is represented
+by a black diamond with error bars represented by black bars. 
+
+
+## d. Table Presentation
+
+```{r tablegt}
+summary_table <- sleep_log |> # assign to sleep log
+  group_by(`Alarm used?`) |>  # set categories
+  summarise(
+    `Average time to get out of bed (min)` = 
+      round(mean(`Time it took to get out of bed (min)`, na.rm = TRUE), 1), 
+    # round data to one decimal point
+    sample = n() # add in sample size
+  )
+# Display with gt
+summary_table |> 
+  gt() |>  #use gt
+  tab_header(
+    title = "Average Time to Get Out of Bed", # set title
+    subtitle = "Grouped by Alarm Use" #set subtitle
+  )
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
