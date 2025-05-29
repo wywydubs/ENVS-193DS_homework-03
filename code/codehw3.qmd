@@ -93,6 +93,8 @@ summary_table |>
 
 # Problem 2 Affective Visualization
 
+## a. Description
+
 An affective visualization for my data could go a variety of ways. I think it 
 probably be focused around two very contrasting styles, maybe a jagged blue
 landscape with a darkened ghoul of some sort to represent days which require an 
@@ -100,6 +102,19 @@ alarm wakeup. This could be contrasted by a smooth, warm hued style with a
 peaceful visually appealing creature in order to represent a natural wakeup. 
 This would evoke an emotional response to my topic that data obviously couldn't 
 convey. 
+
+
+## b. Sketch
+
+```{r insert image}
+knitr::include_graphics("sketch1.png")
+```
+
+
+
+## c. 
+
+
 
 
 
