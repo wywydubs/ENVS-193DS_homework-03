@@ -32,7 +32,29 @@ waking up naturally. This comparison could be done by finding the mean of days
 with alarm use and the mean of no alarm use, and it could inform me more about
 the impact of alarms on my morning routine. 
 
+```{r visualization}
+message = FALSE # hide messages
+warning = FALSE # hide warning
 
+sleep_log <- read_excel("data/sleep_log.xlsx") #read in data
+
+
+ggplot(sleep_log, aes(x = `Alarm used?`, # set x and y
+                      y = `Time it took to get out of bed (min)`)) +
+  geom_jitter(width = 0.2, height = 0, aes(color = `Alarm used?`)) +
+  stat_summary(fun = mean, geom = "point", 
+               shape = 18, size = 4, color = "black") +
+  stat_summary(fun.data = mean_se, geom = "errorbar", 
+               width = 0.2, color = "black") +
+  labs(
+    title = "Minutes to Get Out of Bed with vs without Alarm",
+    x = "Alarm Used?",
+    y = "Minutes to Get Out of Bed"
+  ) +
+  scale_color_manual(values = c("Yes" = "deeppink", "No" = "purple")) +
+  theme_minimal()
+
+```
 
 
 
