@@ -1,0 +1,20 @@
+---
+title: "codehw3"
+format: html
+---
+
+GitHub repo: https://github.com/wywydubs/ENVS-193DS_homework-03
+
+```{r set up}
+message = FALSE # hide messages
+warning = FALSE # hide warning
+
+
+library(tidyverse) # Load packages
+library(here)
+library(gt) # chose gt
+
+library(janitor) # Optional packages
+library(readxl)
+```
+
