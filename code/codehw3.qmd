@@ -5,7 +5,7 @@ format: html
 
 GitHub repo: https://github.com/wywydubs/ENVS-193DS_homework-03
 
-```{r set up}
+```{r set up, message=FALSE, warning=FALSE}
 message = FALSE # hide messages
 warning = FALSE # hide warning
 
@@ -35,7 +35,7 @@ the impact of alarms on my morning routine.
 
 ## b. Visualization
 
-```{r visualization}
+```{r visualization , message=FALSE, warning=FALSE}
 message = FALSE # hide messages
 warning = FALSE # hide warning
 
