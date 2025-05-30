@@ -143,8 +143,29 @@ The authors used panel data regression estimated using Ordinary Least Squares
 is Islam financing and Sukuk. 
 
 ```{r}
-knitr::include_graphics("islam_table.png")
+knitr::include_graphics("islam_table.png") #add in islam image
 ```
 
+## b. Visual Clarity
+
+The table clearly represents the data underlying the statistical tests, and 
+each column labeled and values are super precise. It includes coefficients, 
+standard errors, t-statistics, p-values, and significance levels, which help to
+interpret the reliability of the work. The formatting is clean and makes it easy
+to compare variables.
+
+## c. Aesthetic Clarity
+
+The aesthetic is and clean and doesn't have too many grid lines, while important 
+p values are highlighted nicely using asterisks, and the data is nicely spaced. 
+The precise nature of the data can be a little overwhelming with all of the 
+decimals, but it is still manageable.
+
+## d. Suggestions
+
+Confidence intervals might help the data, and potentially coloring or bolding 
+really important values could assist them further in getting their point across.
+For more readability, a key with definitions for all of the words could be of 
+worth as well. 
 
 
