@@ -122,6 +122,16 @@ knitr::include_graphics("sketch1.png") # insert image
 
 
 
+This piece shows the hidden emotion behind what appears to be very similar data, 
+via a gradient with a ghoulish creature on one side with sharp jagged 
+surroundings to represent waking up with an alarm and a calm peaceful gnome with 
+smooth features and backround to represent waking up naturally, with similar wake 
+up times and times to get out of bed I used some  reference photos for the 
+creatures from online but there wasn't really any outside influence or style. 
+The closest would be some form of dark fantasy style? The form of the work is 
+on a drawing app using an apple pen. I create this by making the gradient 
+backround and then drawing on it using the app. 
+
 
 
 
