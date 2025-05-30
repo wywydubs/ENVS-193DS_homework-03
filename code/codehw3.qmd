@@ -101,23 +101,24 @@ landscape with a darkened ghoul of some sort to represent days which require an
 alarm wakeup. This could be contrasted by a smooth, warm hued style with a
 peaceful visually appealing creature in order to represent a natural wakeup. 
 This would evoke an emotional response to my topic that data obviously couldn't 
-convey. 
+convey. I want to do this and highlight the fact that besides my alarm wakeup,
+the data looks exactly the same, but the emotion behind it is very different.
 
 
 ## b. Sketch
 
 ```{r insert image}
-knitr::include_graphics("sketch1.png")
+knitr::include_graphics("sketch1.png") # insert image
 ```
 
 
 
-## c. 
+## c. Draft of Visualization
 
 
 
 
-
+## d. Artist Statement
 
 
 
