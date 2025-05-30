@@ -130,8 +130,21 @@ up times and times to get out of bed I used some  reference photos for the
 creatures from online but there wasn't really any outside influence or style. 
 The closest would be some form of dark fantasy style? The form of the work is 
 on a drawing app using an apple pen. I create this by making the gradient 
-backround and then drawing on it using the app. 
+background and then drawing on it using the app. 
 
+
+# Problem 3
+
+
+## a. Revise and Summarize
+
+The authors used panel data regression estimated using Ordinary Least Squares 
+(OLS). Response variable is renewable electricity production and the predictor 
+is Islam financing and Sukuk. 
+
+```{r}
+knitr::include_graphics("islam_table.png")
+```
 
 
 
